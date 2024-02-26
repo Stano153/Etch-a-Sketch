@@ -27,6 +27,11 @@ function changeColour(square) {
     square.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
 }
 
+function reset() {
+    const squares = document.querySelectorAll('.square');
+    squares.forEach(square => square.style.backgroundColor = 'white');
+}
+
 function newGrid() {
     let newSize = prompt('select size of grid');
     newSize = parseInt(newSize);
